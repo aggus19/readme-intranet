@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ $1.php
+RewriteRule ^forgot-passowrd/([A-Za-z0-9]+)/$ /forgot-passowrd.php/$1
+RewriteRule ^forgot-passowrd/([A-Za-z0-9]+)$ /forgot-passowrd.php/$1
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+Options -Indexes

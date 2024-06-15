@@ -1,0 +1,8 @@
+# ignore all logs
+*.log
+backup*.zip
+
+# ignore ALL files in ANY directory named fotosPerfil
+fotosPerfil/
+classes/Database.php
+metronic/
